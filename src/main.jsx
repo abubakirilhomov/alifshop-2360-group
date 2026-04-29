@@ -1,33 +1,30 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Pages
-import Main from './pages/Main.jsx'
-import Categories from './pages/Categories.jsx'
-import Categorie from './pages/Categorie.jsx'
-import Favorites from './pages/Favorites.jsx'
-import Search from './pages/Search.jsx'
-import Product from './pages/Product.jsx'
-import Cart from './pages/Cart.jsx'
-import Checkout from './pages/Checkout.jsx'
-import Profile from './pages/Profile.jsx'
-import Orders from './pages/Orders.jsx'
-import OrderDetail from './pages/OrderDetail.jsx'
-import ProfileSettings from './pages/ProfileSettings.jsx'
-import Login from './pages/Login.jsx'
-import Register from './pages/Register.jsx'
-import Event from './pages/Event.jsx'
-import Brand from './pages/Brand.jsx'
-import About from './pages/About.jsx'
-import Contacts from './pages/Contacts.jsx'
-import Terms from './pages/Terms.jsx'
-import NotFound from './pages/NotFound.jsx'
+import Main from "./pages/Main";
+import Categories from "./pages/Categories.jsx";
+import Categorie from "./pages/Categorie.jsx";
+import Favorites from "./pages/Favorites.jsx";
+import Search from "./pages/Search.jsx";
+import Product from "./pages/Product.jsx";
+import Cart from "./pages/Cart.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import Profile from "./pages/Profile.jsx";
+import Orders from "./pages/Orders.jsx";
+import OrderDetail from "./pages/OrderDetail.jsx";
+import ProfileSettings from "./pages/ProfileSettings.jsx";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
+import Event from "./pages/Event.jsx";
+import Brand from "./pages/Brand.jsx";
+import About from "./pages/About.jsx";
+import Contacts from "./pages/Contacts.jsx";
+import Terms from "./pages/Terms.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -85,8 +82,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>,
-)
+);
